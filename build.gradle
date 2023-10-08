@@ -4,9 +4,13 @@ plugins {
 	id 'application'
 }
 
-sourceCompatibility = 17
-targetCompatibility = 17
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
-mainClassName = 'ch.fhnw.algd1.fibonacci.Fibonacci'
+application {
+	mainClass = 'ch.fhnw.algd1.fibonacci.Fibonacci'
+}
